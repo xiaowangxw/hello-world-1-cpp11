@@ -19,9 +19,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << namedStrList["dividingStr"] << endl;
 	cout << namedStrList["endStr"] << endl;
 
+	string inStr;
 	cin.clear();
-	while (cin.rdbuf()->in_avail()) getline(cin, namedStrList["helloStr"]);
-	getline(cin, namedStrList["helloStr"]);
+	while (cin.rdbuf()->in_avail()) getline(cin, inStr);
+	getline(cin, inStr);
+
 	return 0;
 }
 
